@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/planeta-terra.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="send.css">
+    <title>Upload</title>
+    </head>
+    <body>
+    <main>
+        <div class="container">
+            <h1>Envie seu conteúdo</h1>
+    <form id="form" action="/upload" method="post" enctype="multipart/form-data">
+        <label for="titulo">Título:</label>
+        <input type="text" id="title" name="titulo" required><br><br>
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="content" name="descricao" required></textarea><br><br>
+        
+        <img id="imagePreview" class="preview" src="" alt=""/>
+        <input type="file" id="imageInput" accept="image/*" />
+        <input type="submit" value="Enviar" id="submit">
+        </form>
+    </main>
+    <script src="send.js"></script>
+    </body>
+</html>
